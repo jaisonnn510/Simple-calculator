@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div>
+            <input type="text"  readonly id="display">
+            <div class="buttons">
+                <div>
+                    <button onclick="clearDisplay()" class="green-color">AC</button>
+                    <button onclick="deleteOne()" class="green-color">DEL</button>
+                    <button onclick="appendToDisplay('%')" class="green-color">%</button>
+                    <button onclick="appendToDisplay('/')" class="green-color">/</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('*')" class="green-color">*</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('+')" class="green-color">+</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('-')" class="green-color">-</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('00')">00</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button class="equal" onclick="calculate()">=</button>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+
+
+    <script src="first.js"></script>
+</body>
+</html>
